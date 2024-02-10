@@ -1,12 +1,12 @@
 [
     {
-        "question": "What data type is the result of 3 + 1.5?",
+        "question": "What data type is the result of `3 + 1.5`?",
         "type": "multipleChoice",
         "options": ["int", "float", "str", "list"],
         "correctAnswers": [1]
     },
     {
-        "question": "Which data type is ['apple', 'banana', 'cherry']?",
+        "question": "Which data type is `['apple', 'banana', 'cherry']`?",
         "type": "multipleChoice",
         "options": ["list", "tuple", "set", "dictionary"],
         "correctAnswers": [0]
@@ -22,7 +22,7 @@
         "correctAnswers": ["True"]
     },
     {
-        "question": "What does the expression 5 == 5 evaluate to?",
+        "question": "What does the expression `5 == 5` evaluate to?",
         "type": "multipleChoice",
         "options": ["True", "False", "5", "None"],
         "correctAnswers": [0]
@@ -53,10 +53,10 @@
     {
         "question": "Which function converts a `string` to a `float` in Python?",
         "type": "textInput",
-        "correctAnswers": ["float"]
+        "correctAnswers": ["float", "float()"]
     },
     {
-        "question": "What is the output of `print(2 ** 3)`?",
+        "question": "What is the output of `print(2 ** 3)`? Dont type the double/single quotes.",
         "type": "multipleChoice",
         "options": ["8", "6", "9", "None"],
         "correctAnswers": [0]
@@ -64,10 +64,10 @@
     {
         "question": "Which method checks if all characters in the text are in the alphabet?",
         "type": "textInput",
-        "correctAnswers": ["isalpha"]
+        "correctAnswers": ["isalpha", "isalpha()"]
     },
     {
-        "question": "What type of data does the input() function return?",
+        "question": "What type of data does the `input()` function return?",
         "type": "multipleChoice",
         "options": ["int", "bool", "str", "list"],
         "correctAnswers": [2]
@@ -79,23 +79,12 @@
         "correctAnswers": [3]
     },
     {
-        "question": "How do you create a variable with the numeric value 5?",
-        "type": "textInput",
-        "correctAnswers": ["5"]
-    },
-    {
-        "question": "Which of the following is not a core data type in Python?",
-        "type": "multipleChoice",
-        "options": ["List", "Tree", "Dictionary", "Tuple"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What is the result of 'Hello' + 'World'?",
+        "question": "What is the result of 'Hello' + 'World'? Dont type the double/single quotes.",
         "type": "textInput",
         "correctAnswers": ["HelloWorld"]
     },
     {
-        "question": "What does the expression 5 != 5 evaluate to?",
+        "question": "What does the expression `5 != 5` evaluate to?",
         "type": "multipleChoice",
         "options": ["True", "False", "5", "None"],
         "correctAnswers": [1]
@@ -118,9 +107,9 @@
         "correctAnswers": [3]
     },
     {
-        "question": "How do you create a tuple with only one item?",
+        "question": "How do you create a tuple with only one item? Assume the only item is `1`.",
         "type": "textInput",
-        "correctAnswers": ["(item,)"]
+        "correctAnswers": ["(1,)"]
     },
     {
         "question": "What does the list method .append() do?",
@@ -129,7 +118,7 @@
         "correctAnswers": [1]
     },
     {
-        "question": "What is the output of print('Python'[1])?",
+        "question": "What is the output of print('Python'[1])? Dont type the double/single quotes.",
         "type": "textInput",
         "correctAnswers": ["y"]
     },
@@ -140,7 +129,7 @@
         "correctAnswers": [1]
     },
     {
-        "question": "What does the expression '2' + '2' produce?",
+        "question": "What does the expression `'2' + '2'` produce? Dont type the double/single quotes.",
         "type": "textInput",
         "correctAnswers": ["22"]
     },
@@ -151,7 +140,7 @@
         "correctAnswers": [1]
     },
     {
-        "question": "What is the output of bool('')?",
+        "question": "What is the output of `bool('')`?",
         "type": "multipleChoice",
         "options": ["True", "False", "None", "0"],
         "correctAnswers": [1]
@@ -159,10 +148,10 @@
     {
         "question": "Which function gives the absolute value of a number?",
         "type": "textInput",
-        "correctAnswers": ["abs"]
+        "correctAnswers": ["abs", "abs()"]
     },
     {
-        "question": "What data type is the result of 3 == 3?",
+        "question": "What data type is the result of `3 == 3`?",
         "type": "multipleChoice",
         "options": ["int", "float", "bool", "str"],
         "correctAnswers": [2]
@@ -174,7 +163,7 @@
         "correctAnswers": [1]
     },
     {
-        "question": "What does the expression list('123') produce?",
+        "question": "What does the expression `list('123')` produce?",
         "type": "textInput",
         "correctAnswers": ["['1', '2', '3']"]
     },
@@ -191,20 +180,10 @@
         "correctAnswers": [1]
     },
     {
-        "question": "Which keyword is used for looping in Python?",
-        "type": "textInput",
-        "correctAnswers": ["for", "while"]
-    },
-    {
-        "question": "What does the expression '5'.isdigit() return?",
+        "question": "What does the expression `'5'.isdigit()` return?",
         "type": "multipleChoice",
         "options": ["True", "False", "5", "Error"],
         "correctAnswers": [0]
-    },
-    {
-        "question": "How is a comment marked in Python code?",
-        "type": "textInput",
-        "correctAnswers": ["#"]
     },
     {
         "question": "What does the 'break' keyword do in a loop?",
@@ -213,18 +192,13 @@
         "correctAnswers": [1]
     },
     {
-        "question": "What is the data type of {'name': 'John', 'age': 30}?",
+        "question": "What is the data type of `{'name': 'John', 'age': 30}`?",
         "type": "multipleChoice",
         "options": ["list", "dict", "set", "tuple"],
         "correctAnswers": [1]
     },
     {
-        "question": "Which method returns the index of the first occurrence of a value?",
-        "type": "textInput",
-        "correctAnswers": ["index"]
-    },
-    {
-        "question": "What is the output of 10 % 3?",
+        "question": "What is the output of `10 % 3`?",
         "type": "multipleChoice",
         "options": ["1", "3", "0","3"],
         "correctAnswers": [0]
@@ -241,7 +215,7 @@
         "correctAnswers": ["pop"]
     },
     {
-        "question": "What is the result of 'Py' 'thon'?",
+        "question": "What is the result of `'Py' 'thon'`?",
         "type": "multipleChoice",
         "options": ["Python", "Py thon", "SyntaxError", "None"],
         "correctAnswers": [0]
@@ -253,31 +227,25 @@
         "correctAnswers": [0]
     },
     {
-        "question": "What does the 'continue' keyword do in a loop?",
+        "question": "What does the `continue` keyword do in a loop?",
         "type": "multipleChoice",
         "options": ["Pauses the loop", "Stops the loop", "Skips one iteration", "Exits the program"],
         "correctAnswers": [2]
     },
     {
-        "question": "Which data type is designed to store complex numbers?",
-        "type": "multipleChoice",
-        "options": ["int", "float", "complex", "number"],
-        "correctAnswers": [2]
-    },
-    {
-        "question": "What does the .lower() method do to a string?",
+        "question": "What does the `.lower()` method do to a string?",
         "type": "multipleChoice",
         "options": ["Converts it to uppercase", "Converts it to lowercase", "Reverses it", "None of the above"],
         "correctAnswers": [1]
     },
     {
-        "question": "What is the result of isinstance(5, int)?",
+        "question": "What is the result of `isinstance(5, int)`?",
         "type": "multipleChoice",
         "options": ["True", "False", "Error", "None"],
         "correctAnswers": [0]
     },
     {
-        "question": "What does the slice '2:5' applied to 'Hello World' return?",
+        "question": "What does the slice `2:5` applied to 'Hello World' return?",
         "type": "textInput",
         "correctAnswers": ["llo"]
     }
