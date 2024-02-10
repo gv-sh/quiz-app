@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="topic-selection-container">
+        <p>Select a topic to start the quiz:</p>
+        <select id="topic-selector">
+            <option value="data/python-1.json">Python - Part 1</option>
+            <!-- Add more topics and their corresponding file paths here -->
+        </select>
+        <button id="start-button" onclick="selectTopic()">Start Quiz</button>
+    </div>
+    <div id="quiz-container" style="display:none;"></div>
+    <div id="results" style="display:none;"></div>
+
+    <script>
+
+
+        function string_to_html(str) {
+            str = str.replace(/```([^`]+)```/g, '<pre><code>$1</code></pre>');
+            str = str.replace(/`([^`]+)`/g, '<code>$1</code>');
+            return str;
+        }
+
+        let questions = [];
+
+        function selectTopic() {
+            const selectedTopic = document.getElementById('topic-selector').value;
+            fetchQuestions(selectedTopic);
+        }
+
+        async function fetchQuestions(topicFilePath) {
+            try {
+                const response = await fetch(topicFilePath);
+                if (!response.ok) throw new Error('Network response was not ok');
+                const allQuestions = await response.json();
+                shuffleArray(allQuestions);
+                questions = allQuestions.slice(0, 10); // Select 10 questions at random
+                loadQuestions();
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        function loadQuestions() {
+            document.getElementById('topic-selection-container').style.display = 'none';
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = ''; // Clear previous content
+            questions.forEach((question, index) => {
+                const questionElem = document.createElement('div');
+                questionElem.classList.add('question-container');
+                questionElem.innerHTML = `<p>Question ${index + 1}: ${question.question}</p>`;
+                if (question.type === "multipleChoice") {
+                    question.options.forEach((option, optionIndex) => {
+                        const optionLabel = String.fromCharCode(97 + optionIndex);
+                        questionElem.innerHTML += `<label><input type="checkbox" name="question${index}" value="${optionIndex}"> ${optionLabel}) ${option}</label><br>`;
+                    });
+                } else if (question.type === "textInput") {
+                    questionElem.innerHTML += `<input type="text" name="question${index}" value=""><br>`;
+                }
+                container.appendChild(questionElem);
+            });
+            container.innerHTML += `<button onclick="submitAnswers()">Submit Answers</button>`;
+            container.innerHTML += `<button class="back-btn" style="margin-left:20px;" onclick="goBack()">Back</button>`; // Back button to return to topic selection
+            container.style.display = 'block';
+        }
+
+        function submitAnswers() {
+            let score = 0;
+            let resultsHTML = '';
+            questions.forEach((question, index) => {
+                let isCorrect = true; // Assume the answer is correct initially
+                let correctAnswers = question.correctAnswers;
+                let userAnswers = [];
+                let questionClass = "question-container"; // Default class for the question container
+
+                if (question.type === "multipleChoice") {
+                    const selectedOptions = document.querySelectorAll(`input[name="question${index}"]:checked`);
+                    userAnswers = Array.from(selectedOptions).map(option => parseInt(option.value));
+                    isCorrect = JSON.stringify(userAnswers.sort()) === JSON.stringify(correctAnswers.sort());
+                    if (!isCorrect) {
+                        questionClass += " incorrect-answer"; // Add class if the answer is incorrect
+                    }
+                } else if (question.type === "textInput") {
+                    const inputAnswer = document.querySelector(`input[name="question${index}"]`).value.trim().toLowerCase();
+                    isCorrect = correctAnswers.map(answer => answer.toLowerCase()).includes(inputAnswer);
+                    if (!isCorrect) {
+                        questionClass += " incorrect-answer"; // Add class if the answer is incorrect
+                    }
+                }
+
+                resultsHTML += `<div class="${questionClass}">`;
+                resultsHTML += `<p>Question ${index + 1}: ${string_to_html(question.question)}</p>`;
+
+                if (question.type === "multipleChoice") {
+                    question.options.forEach((option, optionIndex) => {
+                        let optionLabel = String.fromCharCode(97 + optionIndex);
+                        let isSelected = userAnswers.includes(optionIndex);
+                        let optionClass = isSelected ? ' selected-option' : '';
+                        optionClass += correctAnswers.includes(optionIndex) ? ' correct-answer' : '';
+                        resultsHTML += `<p class="${optionClass}">${optionLabel}) ${option}</p>`;
+                    });
+                } else if (question.type === "textInput") {
+                    let inputAnswer = document.querySelector(`input[name="question${index}"]`).value.trim();
+                    let answerClass = isCorrect ? 'correct-answer' : 'wrong-answer';
+                    resultsHTML += `<p>Your answer: <span class="${answerClass}">${inputAnswer}</span></p>`;
+                    resultsHTML += `<p>Correct answer: ${correctAnswers.join(', ')}</p>`;
+                }
+
+                if (isCorrect) score++;
+                resultsHTML += `</div>`; // Close the question container div
+            });
+
+            document.getElementById('quiz-container').style.display = 'none';
+            const results = document.getElementById('results');
+            results.style.display = 'block';
+            results.innerHTML = `<p class="score">Your score is: ${score}/${questions.length}</p>${resultsHTML}`;
+            results.innerHTML += `<button class="back-btn" onclick="goBack()">Go back to home page</button>`; // Added back button
+        }
+
+        function goBack() {
+            document.getElementById('quiz-container').style.display = 'none';
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('topic-selection-container').style.display = 'block';
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+    </script>
+</body>
+
+</html>
