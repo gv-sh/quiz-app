@@ -621,6 +621,188 @@
         "options": [
             "Yes",
             "No"
+        ],
+        "correctAnswers": [
+            0
         ]
+    },
+    {
+        "question": "Is `short` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "Is `short1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "Is `1short` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "Is `short_1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "Is `short-1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "Is `short_1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "Is `short_1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "Is `short_1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "Is `short_1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "Is `short_1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "Is `short_1` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of z? `i = 5, x = 3.4, z = i % x`",
+        "type": "textInput",
+        "correctAnswers": [ "float" ]
+    },
+    {
+        "question": "What is the value of z? `i = 5, x = 3.4, z = i % x`",
+        "type": "textInput",
+        "correctAnswers": [ 1.6 ]
+    },
+    {
+        "question": "Which Python type would be appropriate for the birth rate in a country?",
+        "type": "textInput",
+        "correctAnswers": [ "float" ]
+    },
+    {
+        "question": "Which Python type would be appropriate for whether someone has a driver's license or not?",
+        "type": "multipleChoice",
+        "options": [
+            "Boolean",
+            "String",
+            "Integer",
+            "Float"
+        ],
+        "correctAnswers": [ 0 ]
+    },
+    {
+        "question": "Which Python type would be appropriate for the average mark of students in a class?",
+        "type": "textInput",
+        "correctAnswers": [ "float" ]
+    },
+    {
+        "question": "Which Python type would be appropriate for whether a store will open tomorrow or not?",
+        "type": "multipleChoice",
+        "options": [
+            "Boolean",
+            "String",
+            "Integer",
+            "Float"
+        ],
+        "correctAnswers": [ 0 ]
+    },
+    {
+        "question": "Which Python type would be appropriate for car plate number form of both digits and letters (e.g. NA111)?",
+        "type": "textInput",
+        "correctAnswers": [ "String", "str", "string" ]
+    },
+    {
+        "question": "Which Python type would be appropriate for the number of students enrolled in Programming Principles?",
+        "type": "textInput",
+        "correctAnswers": [ "Integer", "int", "integer" ]
+    },
+    {
+        "question": "What is the value of z? `i = 10, j = 4, k = 5.3\nz = i // 3`",
+        "type": "textInput",
+        "correctAnswers": [ "3" ]
     }
+    
 ]
