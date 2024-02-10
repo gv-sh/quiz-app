@@ -56,7 +56,7 @@
             questions.forEach((question, index) => {
                 const questionElem = document.createElement('div');
                 questionElem.classList.add('question-container');
-                questionElem.innerHTML = `<p>Question ${index + 1}: ${question.question}</p>`;
+                questionElem.innerHTML = `<p>Question ${index + 1}: ${string_to_html(question.question)}</p>`;
                 if (question.type === "multipleChoice") {
                     question.options.forEach((option, optionIndex) => {
                         const optionLabel = String.fromCharCode(97 + optionIndex);
