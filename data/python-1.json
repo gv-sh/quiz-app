@@ -1,252 +1,588 @@
 [
     {
-        "question": "What data type is the result of `3 + 1.5`?",
+        "question": "Python 3 is an interpreted programming language. An interpreter reads a program and executes it ___________.",
         "type": "multipleChoice",
-        "options": ["int", "float", "str", "list"],
-        "correctAnswers": [1]
+        "options": [
+            "immediately",
+            "after converting the program into a different language",
+            "before the program is compiled",
+            "after the program is compiled"
+        ],
+        "correctAnswers": [
+            0
+        ]
     },
     {
-        "question": "Which data type is `['apple', 'banana', 'cherry']`?",
+        "question": "Python is a _________ programming language.",
         "type": "multipleChoice",
-        "options": ["list", "tuple", "set", "dictionary"],
-        "correctAnswers": [0]
+        "options": [
+            "first generation",
+            "high-level",
+            "second generation",
+            "low level"
+        ],
+        "correctAnswers": [
+            1
+        ]
     },
     {
-        "question": "What keyword creates a dictionary in Python?",
+        "question": "What is the function that reports the type of a variable in  Python?",
+        "type": "multipleChoice",
+        "options": [
+            "type()",
+            "getClass()",
+            "class()",
+            "sizeof()"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `0/8+1`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `0/8+1`",
+        "type": "multipleChoice",
+        "options": [
+            "0",
+            "1",
+            "0.0",
+            "1.0"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `10 + 5 + 4`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `10 + 5 + 4`",
+        "type": "multipleChoice",
+        "options": [
+            "19",
+            "10 + 5 + 4",
+            "19.0",
+            "10 + 5 + 4.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `15 // 2`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `15 // 2`",
+        "type": "multipleChoice",
+        "options": [
+            "7",
+            "7.5",
+            "8",
+            "8.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `40 % 2`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of the expression `3.14`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "What is the value of the expression `3 + 4 * 2`?",
+        "type": "multipleChoice",
+        "options": [
+            "7",
+            "14",
+            "11",
+            "10"
+        ],
+        "correctAnswers": [
+            2
+        ]
+    },
+    {
+        "question": "What is the type of the expression `True`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            3
+        ]
+    },
+    {
+        "question": "What is the value of the expression `5 > 3 and 2 < 4`?",
+        "type": "multipleChoice",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of the expression `None`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "NoneType"
+        ],
+        "correctAnswers": [
+            3
+        ]
+    },
+    {
+        "question": "What is the type of the expression `3.14`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "What is the value of the expression `3 + 4 * 2`?",
+        "type": "multipleChoice",
+        "options": [
+            "7",
+            "14",
+            "11",
+            "10"
+        ],
+        "correctAnswers": [
+            2
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `10 + 5 + 4`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `10 + 5 + 4`",
+        "type": "multipleChoice",
+        "options": [
+            "19",
+            "10 + 5 + 4",
+            "19.0",
+            "10 + 5 + 4.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `15 // 2`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `15 // 2`",
+        "type": "multipleChoice",
+        "options": [
+            "7",
+            "7.5",
+            "8",
+            "8.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `40 % 2`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `0/8+1`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `0/8+1`",
+        "type": "multipleChoice",
+        "options": [
+            "0",
+            "1",
+            "0.0",
+            "1.0"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `3.14`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            1
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `3 + 4 * 2`?",
+        "type": "multipleChoice",
+        "options": [
+            "7",
+            "14",
+            "11",
+            "10"
+        ],
+        "correctAnswers": [
+            2
+        ]
+    },
+    {
+        "question": "What is the type of the expression `True`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            3
+        ]
+    },
+    {
+        "question": "What is the value of the expression `5 > 3 and 2 < 4`?",
+        "type": "multipleChoice",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of the expression `None`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "NoneType"
+        ],
+        "correctAnswers": [
+            3
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `10 + 5 + 4`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `10 + 5 + 4`",
+        "type": "multipleChoice",
+        "options": [
+            "19",
+            "10 + 5 + 4",
+            "19.0",
+            "10 + 5 + 4.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `15 // 2`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `15 // 2`",
+        "type": "multipleChoice",
+        "options": [
+            "7",
+            "7.5",
+            "8",
+            "8.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `40 % 2`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `10 // 2 // 4`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `10 // 2 // 4`",
+        "type": "multipleChoice",
+        "options": [
+            "0",
+            "0.0",
+            "1",
+            "1.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `10 * (2 * 4)`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `10 * (2 * 4)`",
+        "type": "multipleChoice",
+        "options": [
+            "80",
+            "80.0",
+            "40",
+            "40.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `10 - (5 - 4)`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `10 - (5 - 4)`",
+        "type": "multipleChoice",
+        "options": [
+            "9",
+            "9.0",
+            "10",
+            "10.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of this expression? `5 // 10 + 2`",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the value of this expression? `5 // 10 + 2`",
+        "type": "multipleChoice",
+        "options": [
+            "2",
+            "2.0",
+            "3",
+            "3.0"
+        ],
+        "correctAnswers": [
+            0
+        ]
+    },
+    {
+        "question": "What is the type of the expression `list slicing`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "list"
+        ],
+        "correctAnswers": [
+            3
+        ]
+    },
+    {
+        "question": "What is the type of the expression `strings`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "list"
+        ],
+        "correctAnswers": [
+            2
+        ]
+    },
+    {
+        "question": "What is the type of the expression `dictionary`?",
+        "type": "multipleChoice",
+        "options": [
+            "int",
+            "float",
+            "str",
+            "dict"
+        ],
+        "correctAnswers": [
+            3
+        ]
+    },
+    {
+        "question": "Write the Python expression that will calculate the following, run it in REPL and report the output of your code: The weight of a cat is 4.1 kilograms, and the weight of a dog is 7.2 kilograms, what is the total weight of these two animals? Hint: Write the computed value.",
         "type": "textInput",
-        "correctAnswers": ["dict"]
-    },
-    {
-        "question": "How do you represent the boolean value 'true' in Python?",
-        "type": "textInput",
-        "correctAnswers": ["True"]
-    },
-    {
-        "question": "What does the expression `5 == 5` evaluate to?",
-        "type": "multipleChoice",
-        "options": ["True", "False", "5", "None"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "Which operator is used for string concatenation?",
-        "type": "textInput",
-        "correctAnswers": ["+"]
-    },
-    {
-        "question": "What data type is the result of `len('Python')`?",
-        "type": "multipleChoice",
-        "options": ["int", "float", "str", "list"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "Which of the following is a mutable data type?",
-        "type": "multipleChoice",
-        "options": ["string", "tuple", "list", "frozenset"],
-        "correctAnswers": [2]
-    },
-    {
-        "question": "What does the expression `[1, 2, 3] * 2` produce?",
-        "type": "multipleChoice",
-        "options": ["[1, 2, 3, 1, 2, 3]", "[1, 2, 3, 2]", "[1, 2, 3, 1, 2, 3, 1, 2, 3]", "Error"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "Which function converts a `string` to a `float` in Python?",
-        "type": "textInput",
-        "correctAnswers": ["float", "float()"]
-    },
-    {
-        "question": "What is the output of `print(2 ** 3)`? Dont type the double/single quotes.",
-        "type": "multipleChoice",
-        "options": ["8", "6", "9", "None"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "Which method checks if all characters in the text are in the alphabet?",
-        "type": "textInput",
-        "correctAnswers": ["isalpha", "isalpha()"]
-    },
-    {
-        "question": "What type of data does the `input()` function return?",
-        "type": "multipleChoice",
-        "options": ["int", "bool", "str", "list"],
-        "correctAnswers": [2]
-    },
-    {
-        "question": "Which collection is ordered, changeable, and allows duplicate members?",
-        "type": "multipleChoice",
-        "options": ["Set", "Dictionary", "Tuple", "List"],
-        "correctAnswers": [3]
-    },
-    {
-        "question": "What is the result of 'Hello' + 'World'? Dont type the double/single quotes.",
-        "type": "textInput",
-        "correctAnswers": ["HelloWorld"]
-    },
-    {
-        "question": "What does the expression `5 != 5` evaluate to?",
-        "type": "multipleChoice",
-        "options": ["True", "False", "5", "None"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "Which of these is not a valid keyword in Python?",
-        "type": "multipleChoice",
-        "options": ["elif", "lambda", "assert", "begin"],
-       "correctAnswers": [3]
-    },
-    {
-        "question": "What is the correct way to declare a hexadecimal number in Python?",
-        "type": "textInput",
-        "correctAnswers": ["0x"]
-    },
-    {
-        "question": "Which of the following data types is not supported in Python?",
-        "type": "multipleChoice",
-        "options": ["list", "tuple", "set", "array"],
-        "correctAnswers": [3]
-    },
-    {
-        "question": "How do you create a tuple with only one item? Assume the only item is `1`.",
-        "type": "textInput",
-        "correctAnswers": ["(1,)"]
-    },
-    {
-        "question": "What does the list method .append() do?",
-        "type": "multipleChoice",
-        "options": ["Deletes the last item", "Adds an item to the end", "Sorts the list", "Removes all items"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What is the output of print('Python'[1])? Dont type the double/single quotes.",
-        "type": "textInput",
-        "correctAnswers": ["y"]
-    },
-    {
-        "question": "Which operator is used for floor division?",
-        "type": "multipleChoice",
-        "options": ["/", "//", "%", "**"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What does the expression `'2' + '2'` produce? Dont type the double/single quotes.",
-        "type": "textInput",
-        "correctAnswers": ["22"]
-    },
-    {
-        "question": "Which collection does not allow duplicates?",
-        "type": "multipleChoice",
-        "options": ["List", "Set", "Tuple", "Dictionary"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What is the output of `bool('')`?",
-        "type": "multipleChoice",
-        "options": ["True", "False", "None", "0"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "Which function gives the absolute value of a number?",
-        "type": "textInput",
-        "correctAnswers": ["abs", "abs()"]
-    },
-    {
-        "question": "What data type is the result of `3 == 3`?",
-        "type": "multipleChoice",
-        "options": ["int", "float", "bool", "str"],
-        "correctAnswers": [2]
-    },
-    {
-        "question": "Which of these is used to create a new list?",
-        "type": "multipleChoice",
-        "options": ["{}", "[]", "()", "//"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What does the expression `list('123')` produce?",
-        "type": "textInput",
-        "correctAnswers": ["['1', '2', '3']"]
-    },
-    {
-        "question": "Which method can convert a list to a tuple?",
-        "type": "multipleChoice",
-        "options": ["tuple()", "list()", "set()", "dict()"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "What is the result of bool(0)?",
-        "type": "multipleChoice",
-        "options": ["True", "False", "0", "None"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What does the expression `'5'.isdigit()` return?",
-        "type": "multipleChoice",
-        "options": ["True", "False", "5", "Error"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "What does the 'break' keyword do in a loop?",
-        "type": "multipleChoice",
-        "options": ["Pauses the loop", "Stops the loop", "Skips one iteration", "None of the above"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What is the data type of `{'name': 'John', 'age': 30}`?",
-        "type": "multipleChoice",
-        "options": ["list", "dict", "set", "tuple"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What is the output of `10 % 3`?",
-        "type": "multipleChoice",
-        "options": ["1", "3", "0","3"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "What is the default return value of a function in Python if it doesn't explicitly return a value?",
-        "type": "multipleChoice",
-        "options": ["0", "False", "True", "None"],
-        "correctAnswers": [3]
-    },
-    {
-        "question": "Which method removes and returns the last item of a list?",
-        "type": "textInput",
-        "correctAnswers": ["pop"]
-    },
-    {
-        "question": "What is the result of `'Py' 'thon'`?",
-        "type": "multipleChoice",
-        "options": ["Python", "Py thon", "SyntaxError", "None"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "Which function can generate a sequence of numbers in Python?",
-        "type": "multipleChoice",
-        "options": ["range()", "seq()", "generate()", "list()"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "What does the `continue` keyword do in a loop?",
-        "type": "multipleChoice",
-        "options": ["Pauses the loop", "Stops the loop", "Skips one iteration", "Exits the program"],
-        "correctAnswers": [2]
-    },
-    {
-        "question": "What does the `.lower()` method do to a string?",
-        "type": "multipleChoice",
-        "options": ["Converts it to uppercase", "Converts it to lowercase", "Reverses it", "None of the above"],
-        "correctAnswers": [1]
-    },
-    {
-        "question": "What is the result of `isinstance(5, int)`?",
-        "type": "multipleChoice",
-        "options": ["True", "False", "Error", "None"],
-        "correctAnswers": [0]
-    },
-    {
-        "question": "What does the slice `2:5` applied to 'Hello World' return?",
-        "type": "textInput",
-        "correctAnswers": ["llo"]
+        "correctAnswers": [11.3]
     }
 ]
