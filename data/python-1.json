@@ -584,5 +584,43 @@
         "question": "Write the Python expression that will calculate the following, run it in REPL and report the output of your code: The weight of a cat is 4.1 kilograms, and the weight of a dog is 7.2 kilograms, what is the total weight of these two animals? Hint: Write the computed value.",
         "type": "textInput",
         "correctAnswers": [11.3]
+    },
+    {
+        "question": "What Python type would be appropriate for the number of aeroplanes owned by an air company?",
+        "type": "textInput",
+        "correctAnswers": ["int"]
+    },
+    {
+        "question": "What Python type would be appropriate for the number of cows in a farm?",
+        "type": "textInput",
+        "correctAnswers": ["int"]
+    },
+    {
+        "question": "What Python type would be appropriate for the average number of problems solved by all teams in International Math Olympiad?",
+        "type": "textInput",
+        "correctAnswers": ["float"]
+    },
+    {
+        "question": "What Python type would be appropriate for the number of chairs in a room?",
+        "type": "textInput",
+        "correctAnswers": ["int"]
+    },
+    {
+        "question": "What Python type would be appropriate for the hourly wage in Australia?",
+        "type": "textInput",
+        "correctAnswers": ["float"]
+    },
+    {
+        "question": "What Python type would be appropriate for the number of children in a family?",
+        "type": "textInput",
+        "correctAnswers": ["int"]
+    },
+    {
+        "question": "Is `SHORT` a valid variable name?",
+        "type": "multipleChoice",
+        "options": [
+            "Yes",
+            "No"
+        ]
     }
 ]
